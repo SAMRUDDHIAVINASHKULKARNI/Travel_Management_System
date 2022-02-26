@@ -24,7 +24,7 @@ class ManageMenu{
 class Customers{
     
     public:
-    string name, gender, city;
+    string name, gender, fname, lname, city;
     int age, mobileNo;
     static int cusID;
     char all[999]; // char array to store the details of customers
@@ -36,8 +36,10 @@ class Customers{
         {
         cout<<"Enter customer ID: "<<endl;
         cin>>cusID;
-        cout<<"Enter Name: "<<endl;
-        cin>>name;
+        cout<<"Enter First Name: "<<endl;
+        cin>>fname;
+        cout<<"Enter Last Name: "<<endl;
+        cin>>lname;
         cout<<"Enter Age: "<<endl;
         cin>>age;
         cout<<"Enter Gender: "<<endl;
@@ -47,7 +49,7 @@ class Customers{
         cout<<"Enter Mobile Number: "<<endl;
         cin>>mobileNo;
     }
-    out<<"\n Customer ID: "<<cusID<< "\n Name: "<<name<<"\n Age: "<<age<<"\n Gender"
+    out<<"\n Customer ID: "<<cusID<< "\n Name: "<<fname<<" "<<lname<<"\n Age: "<<age<<"\n Gender"
     << gender <<"\n City: "<<city<<"\n Mobile Number: "<<mobileNo<<endl;
     out.close();
     cout<<"\n SAVED\n NOTE: We have successfully saved your details."<<endl;
